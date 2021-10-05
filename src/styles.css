@@ -241,7 +241,7 @@ label[for="toggle-all"] {
 span.error {
   min-width: 200px;
   position: absolute;
-  top: 25px;
+  top: 1rem;
   right: 1rem;
   font-size: 1.4rem;
   font-weight: bolder;
