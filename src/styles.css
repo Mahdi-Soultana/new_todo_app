@@ -247,11 +247,11 @@ span.error {
   font-weight: bolder;
   border: solid 1px #e44334d5;
   border-radius: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 0.5rem 1rem;
   text-align: center;
   background: #eb554879;
   color: white;
+  opacity: 0.6;
 }
 
 .footer {
