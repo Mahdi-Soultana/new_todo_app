@@ -10,7 +10,9 @@ function Header() {
   if (notification.status === "pending") {
     content = null;
   } else if (notification.status === "error") {
-    content = <span className="error">Oh no !</span>;
+    content = (
+      <span className="error">no server down! but the APP still Work :) </span>
+    );
   }
   return (
     <header className="header">
