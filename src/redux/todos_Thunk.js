@@ -22,10 +22,11 @@ export const loadTodosData = () => {
       dispatch(todosAction.loadTodos(data));
       dispatch(todosAction.setNotification({ status: "success" }));
     } catch (error) {
-      console.log(error);
-      todosAction.setNotification({
-        status: "error",
-      });
+      dispatch(
+        todosAction.setNotification({
+          status: "error",
+        }),
+      );
     }
   };
 };
@@ -47,10 +48,11 @@ export const saveTodo = (todoValue) => {
 
       dispatch(todosAction.setNotification({ status: "success" }));
     } catch (error) {
-      console.log(error);
-      todosAction.setNotification({
-        status: "error",
-      });
+      dispatch(
+        todosAction.setNotification({
+          status: "error",
+        }),
+      );
     }
   };
 };
@@ -68,9 +70,11 @@ export const updateTodo = (todo) => {
       dispatch(todosAction.setNotification({ status: "success" }));
     } catch (error) {
       console.log(error);
-      todosAction.setNotification({
-        status: "error",
-      });
+      dispatch(
+        todosAction.setNotification({
+          status: "error",
+        }),
+      );
     }
   };
 };
@@ -89,9 +93,11 @@ export const destroyTodo = (id) => {
       dispatch(todosAction.setNotification({ status: "success" }));
     } catch (error) {
       console.log(error);
-      todosAction.setNotification({
-        status: "error",
-      });
+      dispatch(
+        todosAction.setNotification({
+          status: "error",
+        }),
+      );
     }
   };
 };

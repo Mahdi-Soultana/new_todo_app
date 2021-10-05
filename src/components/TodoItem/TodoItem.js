@@ -11,16 +11,20 @@ function TodoItem({ todo }) {
     dispatch(destroyTodo(id));
     toast.error("TODO Removed 🤗");
   }
-  function handelUpdate(e) {
-    dispatch(updateTodo({ ...todo, isComplete: e.target.checked }));
-    toast.success("TODO Completed 👏", {
-      duration: 4000,
-      position: "bottom-center",
-      // Styling
-      style: {},
-      // Custom Icon
-      icon: "👏",
-    });
+  function handelUpdate({ target: { checked } }) {
+    dispatch(updateTodo({ ...todo, isComplete: checked }));
+    if (checked) {
+      toast.success("Todo Completed ✔️", {
+        duration: 5000,
+        position: "bottom-center",
+        // Styling
+        style: {
+          fontSize: "1rem",
+        },
+        // Custom Icon
+        icon: "✔️",
+      });
+    }
   }
 
   return (

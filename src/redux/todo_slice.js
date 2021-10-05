@@ -1,17 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import {loadTodos as loadTd,saveTodo as saveTd,destroyTodo as destroyTd,updateTodo as updateTd} from '../lib/service'
+
 const todoSlice = createSlice({
   name: "todo",
   initialState: {
     todos: [],
-    notification: null,
+    notification: { status: null },
   },
   reducers: {
     setNotification(state, action) {
       state.notification = action.payload;
     },
     loadTodos(state, action) {
-      console.log(action.payload, "Load Todos");
       state.todos = action.payload;
     },
     saveTodo(state, action) {

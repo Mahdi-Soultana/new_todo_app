@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import TodoList from "./TodoList";
+import TodoList from "./TodoList/TodoList";
 import { useLocation, Redirect, Route } from "react-router";
 
 function TodoRoute(props) {
