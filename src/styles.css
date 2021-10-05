@@ -249,9 +249,10 @@ span.error {
   border-radius: 5px;
   padding: 0.5rem 1rem;
   text-align: center;
-  background: #eb554879;
+  background: #f33b2a85;
   color: white;
   opacity: 0.6;
+  text-transform: capitalize;
 }
 
 .footer {

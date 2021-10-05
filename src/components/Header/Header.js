@@ -11,7 +11,7 @@ function Header() {
     content = null;
   } else if (notification.status === "error") {
     content = (
-      <span className="error">no server down! but the APP still Work :) </span>
+      <span className="error"> server down! but the APP still Work :) </span>
     );
   }
   return (
